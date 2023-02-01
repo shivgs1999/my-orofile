@@ -1,10 +1,7 @@
-# my-profile
-
-Tools And Technologies:-
-
-Tools:- 
+Tools And Technology
+tools:-
 1. VS Code
-2. GitHub Desktop
+2. GitHub
 
 Technology:-
 1. HTML5
