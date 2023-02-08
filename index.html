@@ -6,8 +6,19 @@
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
              <style>
                   iframe{background-color: antiquewhite;}
-                  header{color: crimson;
-                          background-color: lightsteelblue;}
+                  header,footer{color: crimson;
+                        background-color: lightsteelblue;
+                        border: 4px dotted lightcoral;
+                        padding: 10px 30px;
+                        margin: 10px 200px;
+                        border-radius: 50px;}
+                  nav{  background-color: lightgoldenrodyellow;
+                        border: 4px dashed darkgoldenrod;
+                        padding: 10px 30px;
+                        margin: 10px 200px;
+                        border-radius: 50px;}
+                  .button{background-color: lightgreen;
+                        border-radius: 30px;}            
              </style>
       </head>
       <body align="center">
@@ -18,13 +29,13 @@
             </header>
             <br><br>
             <nav>
-            <button><a href="home.html" target="myFrame">Home </a></button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <button><a href="techStack.html" target="myFrame">TechStack </a></button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <button><a href="education.html" target="myFrame">Education</a></button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <button><a href="personal.html" target="myFrame">Personal Details </a></button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <button><a href="hobbies.html" target="myFrame">My Hobbies </a></button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <button><a href="achievements.html" target="myFrame">My Achievements </a></button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <button><a href="contactUs.html" target="myFrame">Contact Us</a></button>
+            <button class="button"><a href="home.html" target="myFrame">Home </a></button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button class="button"><a href="techStack.html" target="myFrame">TechStack </a></button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button class="button"><a href="education.html" target="myFrame">Education</a></button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button class="button"><a href="personal.html" target="myFrame">Personal Details </a></button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button class="button"><a href="hobbies.html" target="myFrame">My Hobbies </a></button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button class="button"><a href="achievements.html" target="myFrame">My Achievements </a></button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button class="button"><a href="contactUs.html" target="myFrame">Contact Us</a></button>
             </nav>
             <br><br><br>
             <iframe width="1000" height="500" name="myFrame" src="home.html"> </iframe>
