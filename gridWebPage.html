@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My WebPage </title>
+     <!-- CDN link -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     <!-- Bootstrap CSS CDN Link -->
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+<style>
+.item1 { grid-area: header; }
+.item2 { grid-area: menu;
+         display: flex;
+        flex-direction: column;
+        padding: 1px;
+        margin: 1px;   
+       background-color: bisque;
+      }
+.item3 { grid-area: main; }
+.item4 { grid-area: footer; }
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header header header'
+    'menu main main main main main'
+    'footer footer footer footer footer footer';
+  gap: 1px;
+  background-color: #2196F3;
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+</style>
+</head>
+<body>
+
+<div class="grid-container">
+  <div class="item1">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="home.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contactUs.html">Contact Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="aboutWebPage.html">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="contactUs.html">Register here</a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form>
+        </div>
+      </nav>
+  </div>
+  <div class="item2">
+        <button class="button"><a href="home.html" target="myFrame">Home
+              </a></button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <button class="button"><a href="techStack.html" target="myFrame">TechStack
+              </a></button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <button class="button"><a href="education.html"
+                    target="myFrame">Education</a></button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <button class="button"><a href="personal.html" target="myFrame">Personal Details
+              </a></button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <button class="button"><a href="hobbies.html" target="myFrame">My Hobbies
+              </a></button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <button class="button"><a href="achievements.html" target="myFrame">My Achievements
+              </a></button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <button class="button"><a href="contactUs.html" target="myFrame">Contact Us</a></button>
+
+  </div>
+  <div class="item3">
+    <iframe width="1200" height="600" name="myFrame" src="aboutWebPage.html"> </iframe>
+  </div>  
+
+  <div class="item4">
+    <footer>
+        <strong> Fallow Me</strong>&nbsp; &nbsp;
+        <a href="https://www.instagram.com/" target="_blank"> <i class="fa fa-instagram" aria-hidden="true"></i>
+        </a>&nbsp; &nbsp;
+        <a href="https://www.facebook.com/" target="_blank"> <i class="fa fa-facebook-official"
+                    aria-hidden="true"></i> </a>&nbsp; &nbsp;
+        <a href="https://www.linkedin.com/in/shivam-suradkar-20a63a201/" target="_blank"> <i class="fa fa-linkedin"
+                    aria-hidden="true"></i> </a>&nbsp; &nbsp;
+        <a href="https://twitter.com/" target="_blank"> <i class="fa fa-twitter" aria-hidden="true"></i> </a>&nbsp;
+        &nbsp;
+  </footer>
+  </div>
+</div>
+
+</body>
+</html>
+
+
